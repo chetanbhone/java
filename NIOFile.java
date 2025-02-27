@@ -81,6 +81,9 @@ public class NIOFile {
 
     public static void main(String[] args) {
         String userStr = userInput();
+        if (userStr.isEmpty()) {
+            userStr = "0"; // Default value if no input is provided
+        }
         System.out.println("User Entered: " + userStr);
 
         try {
